@@ -1,19 +1,50 @@
+# Loop Optimization and Blocking in Matrix Multiplication Algorithms
 
+Projet académique réalisé dans le cadre d’un travail pratique portant sur l’optimisation des boucles dans un algorithme de multiplication de matrices.
 
-* Compilation
-Créer un répertoire "build", se placer dedans et exécuter la commande cmake suivante :
- - cmake ../
+Le projet se concentre sur l’analyse des dépendances de données, les permutations de boucles et les techniques de blocking (tiling) afin d’améliorer les performances d’exécution et l’utilisation du cache processeur.
 
-ATTENTION : la commande make compile mais exécute également les tests
-Exécuter ensuite la commande "make"
+---
 
+# Objectifs du projet
 
-* Exécution
-L'exécution des tests est maintenant réalisée directement par la commande make
+Ce travail a pour objectif :
 
+- d’analyser les dépendances de données dans des boucles imbriquées
+- d’étudier l’impact des permutations de boucles sur les performances
+- d’optimiser un algorithme de multiplication de matrices (`ssgemm`)
+- d’évaluer différentes stratégies de blocking (tiling)
+- de comparer plusieurs tailles de blocs
+- d’analyser les performances à travers les cycles processeur
+- d’améliorer la localité mémoire et l’efficacité du cache
 
-* Génération des données pour les graphiques
-make GALL
+---
 
-* Génération des graphiques
-Dans le répertoire tests/runs/graphs/, exécuter la commande make -f grphs.mk afin de générer les graphiques.
+# Technologies et outils utilisés
+
+- Langage C/C++
+- CMake
+- Linux
+- Gnuplot
+- Algorithmes BLAS (`ssgemm`)
+- Optimisations de boucles
+- Blocking / Tiling
+- Analyse de performances CPU
+
+---
+
+# Structure du projet
+
+```text
+.
+├── README.org
+├── CMakeLists.txt
+├── tests/
+├── build/
+├── mcblas001/
+├── mcblas002/
+├── mcblas003/
+├── mcblas004/
+├── mcblas005/
+├── mcblas006/
+└── mcblas007/
