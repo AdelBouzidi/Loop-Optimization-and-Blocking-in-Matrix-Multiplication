@@ -1,0 +1,19 @@
+
+
+* Compilation
+Créer un répertoire "build", se placer dedans et exécuter la commande cmake suivante :
+ - cmake ../
+
+ATTENTION : la commande make compile mais exécute également les tests
+Exécuter ensuite la commande "make"
+
+
+* Exécution
+L'exécution des tests est maintenant réalisée directement par la commande make
+
+
+* Génération des données pour les graphiques
+make GALL
+
+* Génération des graphiques
+Dans le répertoire tests/runs/graphs/, exécuter la commande make -f grphs.mk afin de générer les graphiques.
